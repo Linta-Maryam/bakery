@@ -43,13 +43,16 @@ function Header({ scrollRefs }) {
       gap: '15px',
     },
     link: {
-      textDecoration: 'none',
+      background: 'none',
+      border: 'none',
+      padding: '0',
+      margin: '0',
       color: '#d6336c',
       fontWeight: 'bold',
-      padding: '5px 10px',
-      borderRadius: '5px',
-      transition: 'background-color 0.3s, color 0.3s',
-    },
+      fontSize: '16px',
+      cursor: 'pointer',
+      textDecoration: 'none',
+    }
   };
 
   return (
