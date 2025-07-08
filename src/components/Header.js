@@ -49,20 +49,34 @@ function Header({ scrollRefs }) {
       margin: '0',
       color: '#d6336c',
       fontWeight: 'bold',
+ HEAD:{
       fontSize: '16px',
       cursor: 'pointer',
       textDecoration: 'none',
-    }
+    },
+
+      padding: '5px 10px',
+      borderRadius: '5px',
+      transition: 'background-color 0.3s, color 0.3s',
+    },
+    no:{
+      backgroundColor:'none',
+      border:'none',
+      padding:'0px',
+      margin:'0px',
+      font:'inherit',
+      cursor:'pointer'
+    },
   };
 
   return (
     <header style={styles.header}>
       <h1 style={styles.logo}>SWEET DELIGHTS 🍰</h1>
       <nav style={styles.nav}>
-        <button onClick={() => scrollTo('hero')} style={styles.link}>Home</button>
-        <button onClick={() => scrollTo('about')} style={styles.link}>About</button>
-        <button onClick={() => scrollTo('menu')} style={styles.link}>Menu</button>
-        <button onClick={() => scrollTo('contact')} style={styles.link}>Contact</button>
+        <button onClick={() => scrollTo('hero')} style={[styles.no,styles.link]}>Home</button>
+        <button onClick={() => scrollTo('about')} style={[styles.no,styles.link]}>About</button>
+        <button onClick={() => scrollTo('menu')} style={[styles.no,styles.link]}>Menu</button>
+        <button onClick={() => scrollTo('contact')} style={[styles.no,styles.link]}>Contact</button>
       </nav>
       <div style={styles.actions}>
         <button onClick={() => navigate('/login')} style={styles.button}>Login</button>
