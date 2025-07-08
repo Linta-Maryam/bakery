@@ -8,7 +8,7 @@ function About() {
       <section style={styles.section}>
         <img src="https://w0.peakpx.com/wallpaper/624/446/HD-wallpaper-bakery-store-building-bakery-store-shop.jpg" alt="Bakery" style={styles.image} />
         <div style={styles.text}>
-          <h2>🍞 Our Story</h2>
+          <h2>✨ Our Story</h2>
           <p>
             Sweet Delights began in a cozy kitchen with a dream — to bring smiles with every bite.
             From one oven to a full bakery, our love has baked its way into hearts.
